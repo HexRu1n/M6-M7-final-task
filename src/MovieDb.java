@@ -10,7 +10,9 @@ public abstract class MovieDb {
         this.director = director;
     }
 
-    public abstract void playMovie();
+    public void playMovie(){
+        System.out.printf("\nPlaying \"%s\"", name);
+    }
 
     public abstract void displayState();
 

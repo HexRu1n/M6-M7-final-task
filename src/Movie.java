@@ -8,7 +8,7 @@ public class Movie extends MovieDb{
 
     @Override
     public void playMovie(){
-        System.out.println("\nPlaying...");
+        super.playMovie();
         isWatched = true;
     }
 
