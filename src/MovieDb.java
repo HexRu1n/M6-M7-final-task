@@ -1,4 +1,4 @@
-public class MovieDb {
+public abstract class MovieDb {
     private String name;
     private String year;
     private String director;
@@ -10,15 +10,9 @@ public class MovieDb {
         this.director = director;
     }
 
-    public void playMovie(){
-        System.out.println("\nPlaying...");
-    }
+    public abstract void playMovie();
 
-    public void displayState(){
-        if(isWatched) System.out.printf("\nYou already watched \"%s\"\n", name);
-        if(!isWatched) System.out.printf("\nYou not watched \"%s\" yet\n", name);
-    }
-
+    public abstract void displayState();
 
     public void printInfo(){
         System.out.printf("\nAbout\nTitle: \"%s\"\nProduction year: %s\nDirector(s): %s\n", name, year, director);

@@ -1,4 +1,4 @@
-public class MiniSerial extends MovieDb{
+public class MiniSerial extends MovieDb implements PlaySome{
     private int series;
     private int watchedSeries;
 

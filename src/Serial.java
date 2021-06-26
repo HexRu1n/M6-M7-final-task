@@ -1,4 +1,4 @@
-public class Serial extends MovieDb{
+public class Serial extends MiniSerial implements PlaySome{
     //Колличество серий в одном сезоне
     private int series;
     private int seasons;
