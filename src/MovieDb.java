@@ -11,7 +11,7 @@ public class MovieDb {
     }
 
     public void playMovie(){
-        System.out.println("\nPlaying...");
+        System.out.printf("\nPlaying \"%s\"\n", name);
     }
 
     public void displayState(){
