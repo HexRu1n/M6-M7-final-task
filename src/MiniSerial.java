@@ -17,12 +17,12 @@ public class MiniSerial extends MovieDb{
     @Override
     public void displayState(){
         super.displayState();
-        System.out.printf("You watched %d series\n", watchedSeries);
+        System.out.println("Watched series total: " + watchedSeries);
     }
 
     @Override
     public void printInfo(){
         super.printInfo();
-        System.out.println("Total number of series: " + series);
+        System.out.println("Series in season: " + series);
     }
 }

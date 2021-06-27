@@ -22,15 +22,15 @@ public class Serial extends MovieDb{
     @Override
     public void displayState(){
         super.displayState();
-        System.out.printf("You watched %d season and %d series\n", watchedSeasons, watchedSeries%series);
         System.out.println("Watched series total: " + watchedSeries);
+        System.out.printf("You watched %d season and %d series\n", watchedSeasons, watchedSeries%series);
     }
 
     @Override
     public void printInfo(){
         super.printInfo();
-        System.out.println("Number of seasons: " + seasons);
         System.out.println("Series in season: " + series);
+        System.out.println("Number of seasons: " + seasons);
         System.out.println("Total number of series: " + series * seasons);
     }
 }
