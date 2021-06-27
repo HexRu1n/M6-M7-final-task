@@ -21,7 +21,7 @@ public class Serial extends MovieDb{
     public void displayState(){
         super.displayState();
         System.out.println("Watched series total: " + watchedSeries);
-        System.out.printf("You watched %d season and %d series\n", watchedSeries/series, watchedSeries%series);
+        System.out.printf("Watched %d season and %d series\n", watchedSeries/series, watchedSeries%series);
     }
 
     @Override
