@@ -11,7 +11,7 @@ public abstract class MovieDb {
     }
 
     public void playMovie(){
-        System.out.printf("\nPlaying \"%s\"", name);
+        System.out.printf("\nPlaying \"%s\"\n", name);
     }
 
     public void displayState(){

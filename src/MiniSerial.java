@@ -29,11 +29,12 @@ public class MiniSerial extends MovieDb implements PlaySome{
 
     @Override
     public void playSeries(int numOfSeries){
-        if (numOfSeries > series*seasons - watchedSeries) numOfSeries = series*seasons - watchedSeries;
-        if (numOfSeries >= series) {
+        if(numOfSeries > series*seasons - watchedSeries) numOfSeries = series*seasons - watchedSeries;
+        if(numOfSeries >= series) {
             playSeasons(numOfSeries/series);
         }
         watchedSeries += numOfSeries % series;
+        if(watchedSeries == series*seasons) isWatched = true;
     }
 
     @Override
@@ -44,5 +45,6 @@ public class MiniSerial extends MovieDb implements PlaySome{
             numOfSeasons--;
         }
         watchedSeries += numOfSeasons * series;
+        if(watchedSeries == series*seasons) isWatched = true;
     }
 }

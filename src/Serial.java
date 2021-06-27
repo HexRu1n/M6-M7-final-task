@@ -6,13 +6,6 @@ public class Serial extends MiniSerial implements PlaySome{
     }
 
     @Override
-    public void playMovie(){
-        super.playMovie();
-        if(watchedSeries < series*seasons) ++watchedSeries;
-        else isWatched = true;
-    }
-
-    @Override
     public void displayState(){
         super.displayState();
         System.out.printf("You watched %d season and %d series\n", watchedSeries/series, watchedSeries%series);
