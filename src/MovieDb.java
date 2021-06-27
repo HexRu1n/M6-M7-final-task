@@ -14,7 +14,10 @@ public abstract class MovieDb {
         System.out.printf("\nPlaying \"%s\"", name);
     }
 
-    public abstract void displayState();
+    public void displayState(){
+        if(isWatched) System.out.printf("\nYou already watched \"%s\"\n", name);
+        if(!isWatched) System.out.printf("\nYou not watched \"%s\" yet\n", name);
+    }
 
     public void printInfo(){
         System.out.printf("\nAbout\nTitle: \"%s\"\nProduction year: %s\nDirector(s): %s\n", name, year, director);

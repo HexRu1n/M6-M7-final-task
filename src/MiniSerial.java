@@ -25,4 +25,9 @@ public class MiniSerial extends MovieDb implements PlaySome{
         super.printInfo();
         System.out.println("Total number of series: " + series);
     }
+
+    @Override
+    public void playSeries(int numOfSeries){
+
+    }
 }

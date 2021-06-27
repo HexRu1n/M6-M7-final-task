@@ -25,7 +25,7 @@ public class Main {
         for (PlaySome playSome : serials) {
             playSome.playSeasons(1);
             playSome.playSeries(12);
-            if (playSome instanceof MiniSerial) list[1] = (MovieDb) playSome;
+            if (playSome instanceof MovieDb) list[1] = (MovieDb) playSome;
         }
 
         for (MovieDb n : list) n.displayState();

@@ -6,8 +6,7 @@ public class Serial extends MiniSerial implements PlaySome{
     private int watchedSeasons;
 
     public Serial(String name, String year, String director, int series, int seasons) {
-        super(name, year, director);
-        this.series = series;
+        super(name, year, director, series);
         this.seasons = seasons;
     }
 

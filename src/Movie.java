@@ -13,11 +13,6 @@ public class Movie extends MovieDb{
     }
 
     @Override
-    public void displayState(){
-
-    }
-
-    @Override
     public void printInfo(){
         super.printInfo();
         System.out.println("Length - " + length);
