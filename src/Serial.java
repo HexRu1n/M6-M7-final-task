@@ -3,7 +3,6 @@ public class Serial extends MovieDb{
     private int series;
     private int seasons;
     private int watchedSeries;
-    private int watchedSeasons;
 
     public Serial(String name, String year, String director, int series, int seasons) {
         super(name, year, director);
@@ -16,14 +15,13 @@ public class Serial extends MovieDb{
         super.playMovie();
         if(watchedSeries < series*seasons) ++watchedSeries;
         else isWatched = true;
-        watchedSeasons = watchedSeries/series;
     }
 
     @Override
     public void displayState(){
         super.displayState();
         System.out.println("Watched series total: " + watchedSeries);
-        System.out.printf("You watched %d season and %d series\n", watchedSeasons, watchedSeries%series);
+        System.out.printf("You watched %d season and %d series\n", watchedSeries/series, watchedSeries%series);
     }
 
     @Override
