@@ -8,7 +8,7 @@ public class Serial extends MiniSerial implements PlaySome{
     @Override
     public void displayState(){
         super.displayState();
-        System.out.printf("You watched %d season and %d series\n", watchedSeries/series, watchedSeries%series);
+        System.out.printf("Watched %d season and %d series\n", watchedSeries/series, watchedSeries%series);
     }
 
     @Override
