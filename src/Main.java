@@ -5,7 +5,6 @@ public class Main {
         list[1] = new MiniSerial("The Lost Room", "2006", "Craig R. Baxley, Michael W. Watkins", 3);
         list[2] = new Serial("Narcos", "2015 - 2017", "Carlo Bernard, Chris Brancato, Doug Miro", 10, 3);
 
-
         for (MovieDb n : list) {
             n.printInfo();
             n.playMovie();
